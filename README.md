@@ -24,8 +24,11 @@ JOBS="4"
 `export DISTCC_HOSTS='localhost A B C'`, 
 where A, B and C are the slaves' IPs or hostnames
 5. Force compiler on master use distcc
-`export PATH="/usr/lib/distcc:$PATH"`
-`export CC=/usr/lib/distcc/gcc`
-`export CXX=/usr/lib/distcc/g++`
+```
+export PATH="/usr/lib/distcc:$PATH"
+export CC=/usr/lib/distcc/gcc
+export CXX=/usr/lib/distcc/g++
+``
+
 6. Compile!
 `make -j8 CC=distcc`
