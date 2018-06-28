@@ -31,3 +31,6 @@ export CXX=/usr/lib/distcc/g++
 
 6. Compile!
 `make -j8 CC=distcc`
+
+
+export ROS_PARALLEL_JOBS='-j'$(distcc -j)'  -l'$(distcc -j)
