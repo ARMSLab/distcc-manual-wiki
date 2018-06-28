@@ -11,5 +11,7 @@ Here is the guide how to setup and start using distcc for your compilation:
 3. On your master run
 `export DISTCC_HOSTS='localhost A B C'`, 
 where A, B and C are the slaves' IPs
-4. Compile!
+4. Force compiler use distcc
+`export PATH="/usr/lib/distcc:$PATH"`
+5. Compile!
 `make -j8 CC=distcc`
