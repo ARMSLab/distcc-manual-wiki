@@ -8,8 +8,7 @@ Here is the guide how to setup and start using distcc for your compilation:
 `sudo apt install distcc`
 2. On your slaves run
 `sudo distccd --daemon -a IPs_OF_YOUR_SLAVES`
-3. Change slaves' config
-Edit `/etc/default/distcc`:
+3. Change slaves' config by editing `/etc/default/distcc`:
 
 ```bash
 STARTDISTCC="true"
